@@ -262,5 +262,56 @@ span {
     padding: 1.5rem;
   }
 
+
+
   /* TADY PIŠTE STYLY PRO ŠÍŘKU NAD 800PX */
+
+  /* CENOVÁ NABÍDKA */
+
+  .pricelist__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  .offer {
+    width: 220px;
+  }
+
+  .review__photo {
+    background-image: url('images/reviewer.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+  }
+
+  .review__text {
+    width: 250px;
+    background-color: var(--background-secondary);
+    position: relative;
+    left: 60px;
+  }
+
+  .review__content {
+    border: none;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pricelist__content {
+    gap: 6rem;
+  }
+
+  .footer {
+    gap: 6rem;
+  }
 }
